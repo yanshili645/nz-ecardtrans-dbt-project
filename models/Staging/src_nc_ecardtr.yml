@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw_data
+    description: "Raw electronic card transaction data from Stats NZ"
+    database: NZ_ECARDTR_DB
+    schema: RAW
+    tables:
+      - name: RAW_TRANSACTIONS
+        description: "Electronic card transactions from January 2026"
