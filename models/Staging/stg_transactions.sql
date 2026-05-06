@@ -5,12 +5,16 @@ with source as (
 renamed as (
     select
         series_reference,
-        period,
+        -- Converting float period (YYYY.MM) to a DATE
+        try_to_date(
+            floor(period)::varchar || '-' || 
+            lpad(round((period - floor(period)) * 100), 2, '0') || '-01'
+        ) as transaction_date,
         data_value,
         units,
         magnitude,
-        -- Creating a calculated column for the actual value
-        (data_value * power(10, magnitude)) as actual_amount,
+        -- Ensure we handle nulls by defaulting to 0, then apply magnitude scaling
+        (coalesce(data_value, 0) * power(10, coalesce(magnitude, 0))) as actual_amount,
         series_title_1 as group_name,
         series_title_2 as industry
     from source
