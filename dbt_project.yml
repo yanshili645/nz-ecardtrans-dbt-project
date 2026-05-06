@@ -38,7 +38,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   my_new_project: # This must match your project name at the top of the file
-    Staging:
+    staging:
       +materialized: view
     marts:
       +materialized: table # This tells dbt to put things in the 'Tables' folder
