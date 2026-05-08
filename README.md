@@ -30,6 +30,6 @@ To replicate the transformation in your own environment:
 4. Run `dbt test` to verify data quality.
 
 ## Data Visualization: NZ Retail Growth Trends
-![NZ Ecardtr Growth Chart](/NZ Ecardtr Insights Dashboard.png)
+![NZ Ecardtr Growth Chart](NZ%20Ecardtr%20Insights%20Dashboard.png)
 
 *This chart, generated in a Snowflake Notebook, tracks the YoY growth of key sectors using the processed ECT data.*
