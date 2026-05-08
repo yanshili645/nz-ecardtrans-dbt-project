@@ -1,13 +1,13 @@
 Step_ID,Phase,Task_Description,Status,Tools_Used
 1,Preparation,Selected the New Zealand Electronic Card Transactions (ECT) dataset for business case analysis.,Completed,Stats NZ
-2,Infrastructure,Created the Snowflake database (NZ_RETAIL_DB) and the RAW schema.,Completed,Snowflake
-3,Infrastructure,Configured the Snowflake compute warehouse (NZ_RETAIL_WH) with auto-suspend.,Completed,Snowflake
+2,Infrastructure,Created the Snowflake database (NZ_ECARDTR_DB) and the RAW schema.,Completed,Snowflake
+3,Infrastructure,Configured the Snowflake compute warehouse (NZ_ECARDTR_WH) with auto-suspend.,Completed,Snowflake
 4,Integration,Successfully connected the Snowflake account identifier in dbt Cloud.,Completed,dbt Cloud / Snowflake
 5,Version Control,Linked the GitHub repository to dbt Cloud and initialized the project structure.,Completed,dbt Cloud / GitHub
 6,Environment,Configured and saved the Development Environment in dbt Cloud.,Completed,dbt Cloud
 7,Validation,Executed 'dbt debug' and passed all connectivity checks successfully.,Completed,dbt Cloud / CLI
 8,Data Ingestion,Created 'RAW_TRANSACTIONS' table and uploaded the CSV data via Snowflake UI.,Completed,Snowflake
-9,Development,Defined the Snowflake RAW table as a source in 'src_nz_retail.yml'.,Completed,dbt Cloud
+9,Development,Defined the Snowflake RAW table as a source in 'src_nz_ecardtr.yml'.,Completed,dbt Cloud
 10,Development,Created 'stg_transactions.sql' with column renaming and unit calculations.,Completed,dbt Cloud
 11,Development,Executed 'dbt run' and successfully built the staging model in Snowflake.,Completed,dbt Cloud
 12,Validation,Verified the existence of the 'STG_TRANSACTIONS' view in the development schema.,Completed,Snowflake
@@ -33,7 +33,7 @@ Step_ID,Phase,Task_Description,Status,Tools_Used
 32,Business Intelligence,Implemented YoY growth logic via SQL LAG window function.,Completed,dbt Cloud
 33,Analysis,Validated NZ economic trends (Growth in Services vs. Decline in Durables).,Completed,Snowflake
 34,Governance,Documented Marts layer in YAML for project maintainability.,Completed,dbt Cloud
-35,Visualization,Created live performance dashboard for retail sector tracking.,Completed,Snowflake Dashboards
+35,Visualization,Created live performance dashboard for ecardtr sector tracking.,Completed,Snowflake Dashboards
 36,Version Control,Committed final "Gold Layer" models to main branch.,Completed,GitHub
 37,Version Control,Final project commit and sync to main GitHub branch.,Completed,GitHub / dbt Cloud
 38,Governance,Source Accuracy Audit,Clarified ECT vs RTS distinction to ensure professional data transparency.
