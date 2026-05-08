@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: mart_ecardtr_growth
+    description: "Monthly Year-over-Year (YoY) growth analysis for NZ retail industries."
+    columns:
+      - name: yoy_growth_pct
+        description: "The percentage change in spending compared to the same month in the previous year."

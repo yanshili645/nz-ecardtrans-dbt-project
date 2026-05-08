@@ -26,3 +26,14 @@ Step_ID,Phase,Task_Description,Status,Tools_Used
 25,Data Integrity,Filtered out 'Total' aggregate rows to prevent double-counting in final analysis.,Completed,dbt Cloud
 26,Validation,Performed SQL Join audit to verify Star Schema relationship logic (Fact-to-Dim).,Completed,Snowflake
 27,Administration,Committed and synced all Week 2 modeling progress to GitHub.,Completed,GitHub / dbt Cloud
+28,Quality Assurance,Resolved null values and implemented magnitude scaling logic.,Completed,dbt Cloud / Snowflake
+29,Modeling,Architected Star Schema with linked Fact and Dimension tables.,Completed,Snowflake
+30,Data Integrity,Resolved SQL ambiguity and filtered out 'Total' aggregate rows.,Completed,dbt Cloud
+31,Version Control,Committed and synced the complete Star Schema to GitHub.,Completed,GitHub / dbt Cloud
+32,Business Intelligence,Implemented YoY growth logic via SQL LAG window function.,Completed,dbt Cloud
+33,Analysis,Validated NZ economic trends (Growth in Services vs. Decline in Durables).,Completed,Snowflake
+34,Governance,Documented Marts layer in YAML for project maintainability.,Completed,dbt Cloud
+35,Visualization,Created live performance dashboard for retail sector tracking.,Completed,Snowflake Dashboards
+36,Version Control,Committed final "Gold Layer" models to main branch.,Completed,GitHub
+37,Version Control,Final project commit and sync to main GitHub branch.,Completed,GitHub / dbt Cloud
+38,Governance,Source Accuracy Audit,Clarified ECT vs RTS distinction to ensure professional data transparency.
