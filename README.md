@@ -28,3 +28,8 @@ To replicate the transformation in your own environment:
 2. Run `dbt debug` to check connectivity.
 3. Run `dbt run` to build the staging models.
 4. Run `dbt test` to verify data quality.
+
+## Data Visualization: NZ Retail Growth Trends
+![NZ Ecardtr Growth Chart](/NZ Ecardtr Insights Dashboard.png)
+
+*This chart, generated in a Snowflake Notebook, tracks the YoY growth of key sectors using the processed ECT data.*
