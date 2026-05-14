@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: azure_raw
+    description: "Inject raw data from Azure Blob Storage"
+    database: RETAILNZ_DB
+    schema: RAW
+    tables:
+      - name: card_transactions
+      - name: geo_industry_units
+      - name: retail_survey
+      - name: nz_geo_areas
